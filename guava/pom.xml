@@ -39,6 +39,13 @@
     </dependency>
     <!-- TODO(cpovirk): does this comment belong on the <dependency> in <profiles>? -->
     <!-- TODO(cpovirk): want this only for dependency plugin but seems not to work there? Maven runs without failure, but the resulting Javadoc is missing the hoped-for inherited text -->
+    <!-- https://mvnrepository.com/artifact/junit/junit -->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
   <build>
     <plugins>

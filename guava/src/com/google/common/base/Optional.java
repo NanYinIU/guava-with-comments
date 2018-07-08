@@ -169,7 +169,7 @@ public abstract class Optional<T> implements Serializable {
    * Returns the contained instance, which must be present. If the instance might be absent, use
    * {@link #or(Object)} or {@link #orNull} instead.
    *
-   * <p><b>Comparison to {@code java.util.Optional}:</b> when the value is absent, this method
+   * <p><b>Comparison to {@code java.util.Optional}:</b> when the value is absent,缺失 ——> this method
    * throws {@link IllegalStateException}, whereas the Java 8 counterpart throws {@link
    * java.util.NoSuchElementException NoSuchElementException}.
    *
@@ -251,7 +251,7 @@ public abstract class Optional<T> implements Serializable {
   /**
    * Returns an immutable singleton {@link Set} whose only element is the contained instance if it
    * is present; an empty immutable {@link Set} otherwise.
-   *
+   * 返回不可变的单例，他唯一的元素就是那个进来的非空元素。
    * <p><b>Comparison to {@code java.util.Optional}:</b> this method has no equivalent in Java 8's
    * {@code Optional} class. However, this common usage:
    *
@@ -264,6 +264,7 @@ public abstract class Optional<T> implements Serializable {
    * ... can be replaced with:
    *
    * <pre>{@code
+   * Java 8 中使用方法
    * possibleFoo.ifPresent(foo -> doSomethingWith(foo));
    * }</pre>
    *
