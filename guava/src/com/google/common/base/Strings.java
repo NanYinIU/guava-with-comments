@@ -277,9 +277,10 @@ public final class Strings {
       if (placeholderStart == -1) {
         break;
       }
+//      StringBuilder的append方法是（s,start,size） s串从start位置开始，追加size个字符到StringBuilder中
       builder.append(template, templateStart, placeholderStart);
-      builder.append(args[i++]);
-      templateStart = placeholderStart + 2;
+      builder.append(args[i++]); //拼接第一个arg之后变为arg【2】
+      templateStart = placeholderStart + 2; //因为template并没有变 所以要向后挪 ‘%s’length的位置作为下次遍历的开始位置
     }
     builder.append(template, templateStart, template.length());
 

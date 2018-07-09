@@ -1405,6 +1405,13 @@ public final class Preconditions {
     }
   }
 
+  /**
+   * 对 使用
+   * @param start
+   * @param end
+   * @param size
+   * @return
+   */
   private static String badPositionIndexes(int start, int end, int size) {
     if (start < 0 || start > size) {
       return badPositionIndex(start, size, "start index");
