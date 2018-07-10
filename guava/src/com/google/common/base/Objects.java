@@ -49,6 +49,8 @@ public final class Objects extends ExtraObjectsMethodsForWeb {
    * java.util.Objects#equals} instead.
    */
   public static boolean equal(@Nullable Object a, @Nullable Object b) {
+//    这里的a b 都可以为空（@Nullable注解） 当他为空的时候 return a==b 当他不为空的时候使用equals
+//    在这里普及以下 == 和equals的区别 ： == 比较基本数据类型的值是否相等 而Equal是比较对象。。
     return a == b || (a != null && a.equals(b));
   }
 
