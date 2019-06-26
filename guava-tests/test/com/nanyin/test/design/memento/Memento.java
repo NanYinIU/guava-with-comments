@@ -12,7 +12,4 @@ public class Memento {
         return gameState;
     }
 
-    public void setGameState(GameState gameState) {
-        this.gameState = gameState;
-    }
 }

@@ -21,8 +21,8 @@ Class Player{
 + retrieveMemento(Memento):void
 }
 
-Game <|-- ActionGame
 Memento --o ActionGame
 Memento --> Player
 
+Game <|-- ActionGame
 @enduml
