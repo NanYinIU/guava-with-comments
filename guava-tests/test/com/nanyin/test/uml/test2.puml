@@ -1,0 +1,15 @@
+@startuml
+class classC <<Serializable>> {
+__variable__
+    -a:A
+    #b:B
+    +c:C
+__methods__
+    +hello():void
+    -word():void
+}
+
+class classD <? extends List>{
+
+}
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+'类的关系
+    class A
+    abstract B
+    ' A 继承 B
+    A --|> B
+
+    ' implement 实现 interface
+    interface interface
+    class implement
+    implement ..|> interface
+@enduml

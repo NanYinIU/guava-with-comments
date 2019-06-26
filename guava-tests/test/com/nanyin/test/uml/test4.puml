@@ -1,0 +1,26 @@
+@startuml
+'依赖与关联
+Class X
+' 依赖关系
+X ..> Y :"依赖关系"
+
+class A
+' 单向关联 A关联B
+A--> B :"单向关联"
+' 双向关联
+class C
+C --  D : "双向关联"
+' 自关联
+class F
+F --> F:"自关联"
+' 聚合关系
+class G {
+List<H> h
+}
+G "n" o-- "1" H : "组合关系"
+' 组合关系
+class K {
+List<L> l
+}
+K "n"*--"1" L :"聚合关系"
+@enduml
